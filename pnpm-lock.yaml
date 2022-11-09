@@ -32,9 +32,12 @@ importers:
 
   packages/core:
     specifiers:
-      '@vmejs/shared': workspace:^1.0.0
+      '@vmejs/shared': workspace:*
     dependencies:
       '@vmejs/shared': link:../shared
+
+  packages/shared:
+    specifiers: {}
 
 packages:
 

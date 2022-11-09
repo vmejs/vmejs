@@ -18,6 +18,6 @@
   "plugins": ["@typescript-eslint"],
   "rules": {
     "no-console": "error",
-    "no-debugger": "warn"
+    "no-debugger": "error"
   }
 }
