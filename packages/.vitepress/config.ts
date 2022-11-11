@@ -14,7 +14,7 @@ const DefaultSideBar = [
 ];
 
 export default {
-  base: '/vmejs/',
+  base: '/',
   title: 'vmejs',
   lang: 'zh-CN',
   themeConfig: {
