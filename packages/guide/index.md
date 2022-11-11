@@ -1,20 +1,19 @@
- # 快速开始
+# 快速开始
 
-  ## 安装
+## 安装
 
-  ```bash
-  npm i @vmejs/core
-  ```
+```bash
+npm i @vmejs/core
+```
 
+## 简单使用
 
-  ## 简单使用
+```ts
+import { getDevice } from '@vmejs/core';
 
-  ``` ts
-    import { getDevice } from "@vmejs/core"
+const browser = getDevice();
 
-    const browser = getDevice()
-
-    // do something
-  ```
+// do something
+```
 
   <!-- 更多功能列表，请参阅 [functions list](/core/getDevice/)。 -->

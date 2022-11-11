@@ -34,7 +34,7 @@ features:
     details: 集成你想要的 React hooks
     icon: 🚀
   - title: Vue Hooks（建设中）
-    details:  集成你想要的 Vue hooks
+    details: 集成你想要的 Vue hooks
     icon: ⚡
   - title: 强类型支持
     details: 使用TypeScript编写,良好类型支持
