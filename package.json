@@ -9,13 +9,16 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
-    "lint": "eslint . --fix --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 --cache",
+    "docs:dev": "vitepress dev packages",
+    "docs:build": "vitepress build packages",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 --cache",
     "lint:fix": "pnpm run lint --fix",
     "format": "prettier --write --cache .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest test",
+    "coverage": "vitest run --coverage"
   },
   "lint-staged": {
-    "*.{vue,js,ts,jsx,tsx,md,json}": [
+    "*.{vue,js,ts,jsx,tsx,json}": [
       "pnpm run lint",
       "pnpm run format"
     ]
@@ -26,12 +29,15 @@
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.42.1",
     "@typescript-eslint/parser": "^5.42.1",
+    "@vitest/coverage-c8": "^0.25.1",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "vitepress": "1.0.0-alpha.28",
+    "vitest": "^0.25.1"
   }
 }

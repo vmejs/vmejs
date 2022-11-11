@@ -1,0 +1,16 @@
+.eslintignore
+.eslintrc
+.gitignore
+tsconfig.json
+pnpm-lock.yaml
+
+node_modules/
+examples/
+
+README.md
+README.zh-CN.md
+LICENSE
+
+types
+coverage
+.changeset
