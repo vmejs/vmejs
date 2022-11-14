@@ -13,7 +13,10 @@
     "build": "tsup",
     "docs:dev": "vitepress dev packages",
     "docs:build": "vitepress build packages",
-    "release": "changeset publish",
+    "change": "changeset",
+    "change:version": "changeset version",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "changeset publish",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 --cache",
     "lint:fix": "pnpm run lint --fix",
     "format": "prettier --write --cache .",
@@ -26,7 +29,11 @@
       "pnpm run format"
     ]
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.7",
     "@changesets/cli": "^2.25.2",
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
