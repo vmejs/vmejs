@@ -1,4 +1,7 @@
-const Guide = [{ text: 'Get Started', link: '/guide/' }];
+const Guide = [
+  { text: 'Get Started', link: '/guide/' },
+  { text: '贡献指南', link: '/guide/contributing' },
+];
 
 const functions = [Guide, { text: 'getDevice', link: '/packages/core/getDevice/' }];
 
