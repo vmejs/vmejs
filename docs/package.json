@@ -1,7 +1,8 @@
 {
-  "name": "docs",
-  "version": "1.0.0",
+  "name": "@vmejs/docs",
+  "version": "0.0.1",
   "description": "",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev .",
