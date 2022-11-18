@@ -15,7 +15,7 @@ hero:
       link: /guide/
     - theme: alt
       text: 工具函数集合
-      link: /core/getDevice/
+      link: /packages/core/getDevice/
     - theme: alt
       text: Vue Hooks
       link: /vue

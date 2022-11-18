@@ -16,4 +16,4 @@ const browser = getDevice();
 // do something
 ```
 
-  <!-- 更多功能列表，请参阅 [functions list](/core/getDevice/)。 -->
+  <!-- 更多功能列表，请参阅 [functions list](/packages/core/getDevice/)。 -->
