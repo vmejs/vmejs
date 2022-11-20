@@ -25,7 +25,7 @@
   },
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,json}": [
-      "pnpm run lint",
+      "eslint --cache --fix",
       "pnpm run format"
     ]
   },

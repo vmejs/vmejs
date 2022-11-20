@@ -22,6 +22,6 @@
       "@vmejs/core/*": ["./packages/core/*"]
     }
   },
-  "include": ["packages", "packages/.vitepress/components/*.vue", "packages/.vitepress/*.ts", "meta", "vitest.config.ts", "*.d.ts"],
+  "include": ["packages", "docs/.vitepress/components/*.vue", "docs/.vitepress/*.ts", "meta", "vitest.config.ts", "*.d.ts", "playgrounds"],
   "exclude": ["node_modules", "**/**/*.md", "**/dist", "packages/.test", "packages/_docs", "dist"]
 }

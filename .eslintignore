@@ -4,3 +4,4 @@ coverage
 !.vitepress/
 !.changeset/
 pnpm-lock.yaml
+playgrounds/

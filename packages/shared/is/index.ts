@@ -19,3 +19,5 @@ export const isPromise = <T = any>(val: unknown): val is Promise<T> => {
 export const isWindow = (val: unknown): val is Window => typeof window !== 'undefined' && toString.call(val) === '[object Window]';
 export const isIOS = /* #__PURE__ */ isClient && window?.navigator?.userAgent && /iP(ad|hone|od)/.test(window.navigator.userAgent);
 export const hasOwn = <T extends object, K extends keyof T>(val: T, key: K): key is K => Object.prototype.hasOwnProperty.call(val, key);
+
+export const noop = () => {};

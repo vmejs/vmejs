@@ -5,7 +5,7 @@ const Guide = [
 
 const functions = [Guide, { text: 'getDevice', link: '/packages/core/getDevice/' }];
 
-const vueHooks = [functions, { text: '建设中', link: '' }];
+const vueHooks = [functions, { text: 'useEventListener', link: '/packages/vue-hooks/useEventListener' }];
 
 const reactHooks = [functions, { text: '建设中', link: '' }];
 

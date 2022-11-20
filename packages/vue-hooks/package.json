@@ -1,0 +1,35 @@
+{
+  "name": "@vmejs/vue-hooks",
+  "version": "0.0.1",
+  "description": "",
+  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "unpkg": "./dist/index.iife.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": "./*"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=7.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@vmejs/shared": "workspace:*",
+    "vue-demi": "*"
+  }
+}
