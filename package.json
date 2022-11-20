@@ -10,6 +10,7 @@
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "dev": "tsup --watch",
+    "dev:vue": "pnpm -C playgrounds/vue dev",
     "build": "tsup",
     "docs:dev": "pnpm -C docs dev",
     "docs:build": "pnpm run -C docs build",
@@ -26,7 +27,7 @@
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,json}": [
       "eslint --cache --fix",
-      "pnpm run format"
+      "pnpm format"
     ]
   },
   "publishConfig": {

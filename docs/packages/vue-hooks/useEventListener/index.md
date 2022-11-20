@@ -9,18 +9,22 @@ category: Browser（浏览器）
 ## 用法
 
 ```js
-import { useEventListener } from '@ vmejs/core'
+import { useEventListener } from '@ vmejs/core';
 
-useEventListener(document, 'visibilitychange', (evt) => { console.log(evt) })
+useEventListener(document, 'visibilitychange', (evt) => {
+  console.log(evt);
+});
 ```
 
 您还可以传递一个 ref 作为事件目标，useEventListener 当您更改目标时，将注销前一个事件并注册新事件。
 
 ```ts
-import { useEventListener } from '@vueuse/core'
+import { useEventListener } from '@vueuse/core';
 
-const element = ref<HTMLDivElement>()
-useEventListener(element, 'keydown', (e) => { console.log(e.key) })
+const element = ref<HTMLDivElement>();
+useEventListener(element, 'keydown', (e) => {
+  console.log(e.key);
+});
 ```
 
 ```html
@@ -33,9 +37,11 @@ useEventListener(element, 'keydown', (e) => { console.log(e.key) })
 通过返回的方法来注销监听事件
 
 ```ts
-import { useEventListener } from '@vueuse/core'
+import { useEventListener } from '@vueuse/core';
 
-const cleanup = useEventListener(document, 'keydown', (e) => { console.log(e.key) })
+const cleanup = useEventListener(document, 'keydown', (e) => {
+  console.log(e.key);
+});
 
-cleanup()
+cleanup();
 ```
