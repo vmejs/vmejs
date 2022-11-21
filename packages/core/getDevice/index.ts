@@ -66,7 +66,6 @@ export const getDevice = (ua?: string) => {
     model: '',
     vendor: '',
   };
-
   if (!isString(ua)) {
     // node runtimes env
     if (global) return device;

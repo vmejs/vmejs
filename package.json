@@ -21,7 +21,9 @@
     "lint:fix": "pnpm run lint --fix",
     "format": "prettier --write --cache .",
     "test": "vitest test",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "vue-example": "pnpm -F vue-example run dev",
+    "react-example": "pnpm -F react-example run dev"
   },
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,json}": [
