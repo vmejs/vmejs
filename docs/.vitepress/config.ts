@@ -16,8 +16,10 @@ const DefaultSideBar = [
   { text: 'React Hooks集合', items: reactHooks },
 ];
 
+const isDev = process.argv[process.argv.length - 1] === 'development';
+
 export default {
-  base: '/',
+  base: isDev ? '/' : '/vmejs/',
   title: 'vmejs',
   lang: 'zh-CN',
   themeConfig: {
