@@ -5,9 +5,9 @@ const Guide = [
 
 const functions = [Guide, { text: 'getDevice', link: '/packages/core/getDevice/' }];
 
-const vueHooks = [functions, { text: 'useEventListener', link: '/packages/vue-hooks/useEventListener' }];
+const vueHooks = [functions, { text: 'useEventListener', link: '/packages/vue-hooks/useEventListener/' }];
 
-const reactHooks = [functions, { text: '建设中', link: '' }];
+const reactHooks = [functions, { text: 'useMount', link: '/packages/react-hooks/useMount/' }];
 
 const DefaultSideBar = [
   { text: '快速指南', items: Guide },
@@ -17,7 +17,7 @@ const DefaultSideBar = [
 ];
 
 export default {
-  base: '/vmejs/',
+  base: '/',
   title: 'vmejs',
   lang: 'zh-CN',
   themeConfig: {
