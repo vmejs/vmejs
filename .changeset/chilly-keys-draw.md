@@ -1,0 +1,5 @@
+---
+'@vmejs/core': major
+---
+
+createThrottle
