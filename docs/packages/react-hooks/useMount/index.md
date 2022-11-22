@@ -9,8 +9,7 @@ category: LifeCycle
 ## 用法
 
 ```js
-
-import { useMount } from '@vmejs/react-hooks'
+import { useMount } from '@vmejs/react-hooks';
 
 const MyComponent = () => {
   useMount(() => {
@@ -20,6 +19,7 @@ const MyComponent = () => {
   return <div>Hello World</div>;
 };
 ```
+
 ## 参数
 
 | 参数 | 说明               | 类型         | 默认值 |
