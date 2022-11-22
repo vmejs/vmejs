@@ -13,7 +13,7 @@ git clone https://github.com/vmejs/vmejs.git
 git clone git@github.com:vmejs/vmejs.git
 
 # 进入 vmejs 目录
-cd vemjs && pnpm install
+cd vmejs && pnpm install
 ```
 
 ## 2. 贡献流程
@@ -39,15 +39,15 @@ cd vemjs && pnpm install
    git clone 你的fork项目 ssh 地址
 
    # 进入 vmejs 目录
-   cd vemjs && pnpm install
+   cd vmejs && pnpm install
 
    # 新建功能分支
    git checkout -b feature-getDevice
    ```
 
-3. 完成对应函数方法（例如：https://github.com/vmejs/vmejs/blob/main/packages/core/getDevice/index.ts）
-4. 完成对应的测试用例（例如：https://github.com/vmejs/vmejs/blob/main/packages/core/getDevice/index.test.ts）
-5. 完成对应的使用文档（例如：https://github.com/vmejs/vmejs/blob/main/docs/packages/core/getDevice/index.md）
+3. 完成对应函数方法（例如：<https://github.com/vmejs/vmejs/blob/main/packages/core/getDevice/index.ts>）
+4. 完成对应的测试用例（例如：<https://github.com/vmejs/vmejs/blob/main/packages/core/getDevice/index.test.ts>）
+5. 完成对应的使用文档（例如：<https://github.com/vmejs/vmejs/blob/main/docs/packages/core/getDevice/index.md>）
 
 6. 你可以本地执行一些命令：
 
@@ -85,9 +85,11 @@ cd vemjs && pnpm install
    ```
 
 8. 以上全部 ok 后，一定要在本地执行 `pnpm change` 生成 `changeset` 文件
+
    ```
    pnpm change
    ```
+
 9. `Git` 上传：严格遵守 Git Commit 规范
 
    - 统一格式：
