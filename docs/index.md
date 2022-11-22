@@ -18,10 +18,10 @@ hero:
       link: /packages/core/getDevice/
     - theme: alt
       text: Vue Hooks
-      link: /packages/vue-hooks/useEventListener
+      link: /packages/vue-hooks/useEventListener/
     - theme: alt
       text: React Hooks
-      link: /packages/react-hooks/useMount
+      link: /packages/react-hooks/useMount/
     - theme: alt
       text: View on GitHub
       link: https://github.com/jeddygong
