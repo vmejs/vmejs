@@ -134,6 +134,7 @@ cd vmejs && pnpm install
 
    新增 `hook` 使用 `New hook: + 'hook name'` 的格式 比如： `New hook: useMount`
 
+
 2. issue 内容
 
    对于新增 `hook` 你需要回答以下问题以确保其可行性和目的
@@ -143,6 +144,7 @@ cd vmejs && pnpm install
    > 需要在这里描述 `hook` 的使用场景 or 功能
 
    **hook 用法?**
+
 
    > 尽可能的说明新增 `hook` 的参数、返回值及使用方式
 
