@@ -1,7 +1,10 @@
 {
-  "name": "@vmejs/shared",
+  "name": "@vmejs/react-hooks",
   "version": "0.0.1-alpha.5",
   "description": "",
+  "license": "MIT",
+  "keywords": [],
+  "author": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "unpkg": "./dist/index.iife.js",
@@ -25,7 +28,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "@vmejs/shared": "workspace:*"
+  },
+  "devDependencies": {}
 }

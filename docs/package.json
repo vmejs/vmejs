@@ -1,11 +1,11 @@
 {
   "name": "@vmejs/docs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "private": true,
   "main": "index.js",
   "scripts": {
-    "dev": "vitepress dev .",
+    "dev": "vitepress dev . --mode development",
     "build": "vitepress build .",
     "serve": "vitepress serve ."
   },

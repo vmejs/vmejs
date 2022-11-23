@@ -15,13 +15,27 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "noUnusedLocals": true,
+    "jsx": "react-jsx",
     "paths": {
       "@vmejs/shared": ["./packages/shared/index.ts"],
       "@vmejs/shared/*": ["./packages/shared/*"],
       "@vmejs/core": ["./packages/core/index.ts"],
-      "@vmejs/core/*": ["./packages/core/*"]
+      "@vmejs/core/*": ["./packages/core/*"],
+      "@vmejs/vue-hooks": ["./packages/vue-hooks/index.ts"],
+      "@vmejs/vue-hooks/*": ["./packages/vue-hooks/*"],
+      "@vmejs/react-hooks": ["./packages/react-hooks/index.ts"],
+      "@vmejs/react-hooks/*": ["./packages/react-hooks/*"]
     }
   },
-  "include": ["packages", "packages/.vitepress/components/*.vue", "packages/.vitepress/*.ts", "meta", "vitest.config.ts", "*.d.ts"],
+  "include": [
+    "packages",
+    "docs/.vitepress/components/*.vue",
+    "docs/.vitepress/*.ts",
+    "meta",
+    "vitest.config.ts",
+    "*.d.ts",
+    "playgrounds",
+    "playgrounds/react/src"
+  ],
   "exclude": ["node_modules", "**/**/*.md", "**/dist", "packages/.test", "packages/_docs", "dist"]
 }
