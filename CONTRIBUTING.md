@@ -127,3 +127,63 @@ cd vmejs && pnpm install
 - 你 fork 的功能分支提交 PR 合并至`main`分支
 - 代码审核与优化
 - 审核人`Approved`后合入`main`分支
+
+## 5. Hook 新增规范
+1. issue 标题
+
+   新增 `hook` 使用 ` New hook: + 'hook name' ` 的格式 比如： `New hook useMount`
+
+2. issue 内容
+
+   对于新增 `hook` 你需要回答以下问题以确保其可行性和目的
+
+   **hook使用场景？**
+
+   > 需要在这里描述 `hook` 的使用场景 or 功能
+
+   **hook用法?** 
+
+   > 尽可能的说明新增 `hook` 的参数、返回值及使用方式
+
+   **补充说明？**
+
+   > 提供一些 demo code 或 推荐其他开源库已有的 hook 也可以是关于这个新增 hook 相关的文章链接等
+
+3. 举例：
+
+   创建一个 `issue` 标题为 `New hook: useMount` 在新建 `issue` 的内容中需要回答3个问题
+
+   **hook使用场景？**
+
+   `useMount` 仅在组件初始化的时候执行,这将类似与 react 中 class 组件的 `componentDidMount()` [生命周期函数](https://reactjs.org/docs/react-component.html#componentdidmount)
+
+   **hook用法?** 
+
+   ~~~tsx
+   // useMount
+   function useMount(fn: ()): void
+   
+   // 使用
+   export funciton App() {
+     useMount(()=>{
+       // 初始化处理
+     })
+       
+     return <div>Hello World</div>;
+   }
+   ~~~
+
+   **补充说明？**
+
+   ~~~ts
+   // demo
+   function useMount(fn: ()=> void){
+     if(!isFunciton(fn)){
+         throw new Error('...')
+     }
+       
+     useEffect(()=>{
+         fn?.()
+     }, [])
+   }
+   ~~~
