@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 
-export interface Actions<K, T> {
+interface Actions<K, T> {
   set: (key: K, value: T) => void;
   setAll: (newMap: Iterable<readonly [K, T]>) => void;
   remove: (key: K) => void;
