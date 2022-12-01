@@ -7,7 +7,11 @@ const functions = [Guide, { text: 'getDevice', link: '/packages/core/getDevice/'
 
 const vueHooks = [functions, { text: 'useEventListener', link: '/packages/vue-hooks/useEventListener/' }];
 
-const reactHooks = [functions, { text: 'useMount', link: '/packages/react-hooks/useMount/' }];
+const reactHooks = [
+  functions,
+  { text: 'useMount', link: '/packages/react-hooks/useMount/' },
+  { text: 'useMap', link: '/packages/react-hooks/useMap/' },
+];
 
 const DefaultSideBar = [
   { text: '快速指南', items: Guide },
