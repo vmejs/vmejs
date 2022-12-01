@@ -129,19 +129,20 @@ cd vmejs && pnpm install
 - 审核人`Approved`后合入`main`分支
 
 ## 5. Hook 新增规范
+
 1. issue 标题
 
-   新增 `hook` 使用 ` New hook: + 'hook name' ` 的格式 比如： `New hook useMount`
+   新增 `hook` 使用 `New hook: + 'hook name'` 的格式 比如： `New hook useMount`
 
 2. issue 内容
 
    对于新增 `hook` 你需要回答以下问题以确保其可行性和目的
 
-   **hook使用场景？**
+   **hook 使用场景？**
 
    > 需要在这里描述 `hook` 的使用场景 or 功能
 
-   **hook用法?** 
+   **hook 用法?**
 
    > 尽可能的说明新增 `hook` 的参数、返回值及使用方式
 
@@ -151,39 +152,39 @@ cd vmejs && pnpm install
 
 3. 举例：
 
-   创建一个 `issue` 标题为 `New hook: useMount` 在新建 `issue` 的内容中需要回答3个问题
+   创建一个 `issue` 标题为 `New hook: useMount` 在新建 `issue` 的内容中需要回答 3 个问题
 
-   **hook使用场景？**
+   **hook 使用场景？**
 
    `useMount` 仅在组件初始化的时候执行,这将类似与 react 中 class 组件的 `componentDidMount()` [生命周期函数](https://reactjs.org/docs/react-component.html#componentdidmount)
 
-   **hook用法?** 
+   **hook 用法?**
 
-   ~~~tsx
+   ```tsx
    // useMount
    function useMount(fn: ()): void
-   
+
    // 使用
    export funciton App() {
      useMount(()=>{
        // 初始化处理
      })
-       
+
      return <div>Hello World</div>;
    }
-   ~~~
+   ```
 
    **补充说明？**
 
-   ~~~ts
+   ```ts
    // demo
-   function useMount(fn: ()=> void){
-     if(!isFunciton(fn)){
-         throw new Error('...')
+   function useMount(fn: () => void) {
+     if (!isFunciton(fn)) {
+       throw new Error('...');
      }
-       
-     useEffect(()=>{
-         fn?.()
-     }, [])
+
+     useEffect(() => {
+       fn?.();
+     }, []);
    }
-   ~~~
+   ```
