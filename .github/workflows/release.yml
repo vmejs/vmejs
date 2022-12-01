@@ -2,9 +2,9 @@
 # 整个工作流的名称
 name: Release
 
-# 监听 main 分支的 pull_request 事件(有更新时)
+# 监听 main 分支的 push/pull_request 事件(有更新时)
 on:
-  pull_request:
+  push:
     branches:
       - main
 
