@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ES2015",
     "module": "esnext",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "moduleResolution": "node",
@@ -37,5 +37,5 @@
     "playgrounds",
     "playgrounds/react/src"
   ],
-  "exclude": ["node_modules", "**/**/*.md", "**/dist", "packages/.test", "packages/_docs", "dist"]
+  "exclude": ["node_modules", "**/**/*.md", "**/dist", "dist"]
 }

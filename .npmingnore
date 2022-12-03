@@ -20,3 +20,4 @@ coverage
 .github
 .vitepress
 .changeset
+meta/meta.json
