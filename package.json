@@ -30,7 +30,8 @@
   "lint-staged": {
     "*.{vue,js,ts,jsx,tsx,json}": [
       "eslint --cache --fix",
-      "pnpm format"
+      "pnpm format",
+      "git add"
     ]
   },
   "publishConfig": {
