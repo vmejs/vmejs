@@ -11,6 +11,7 @@ const reactHooks = [
   functions,
   { text: 'useMount', link: '/packages/react-hooks/useMount/' },
   { text: 'useMap', link: '/packages/react-hooks/useMap/' },
+  { text: 'useDidUpdate', link: '/packages/react-hooks/useDidUpdate/' },
 ];
 
 const DefaultSideBar = [
