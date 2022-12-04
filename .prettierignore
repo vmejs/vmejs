@@ -22,3 +22,5 @@ components.d.ts
 auto-imports.d.ts
 
 playgrounds
+
+/coverage
